@@ -47,4 +47,5 @@ Command Pallet like launcher
 - In normal mode hit \\
 Starup window with recent files etc
 - Launch neovim with `nvim` it will load a launch screen with recent files etc
--
+A better shell with history
+- type `zsh` to launch
