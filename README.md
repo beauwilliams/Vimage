@@ -16,7 +16,7 @@ A premade environment for developing java using vim, with everything installed a
 `docker images`
 
 ### Run it, launch a shell prompt
-`docker run -it --entrypoint /bin/sh 2213c4c29d0d`
+`docker run -it --entrypoint /bin/sh <IDofyournewcontainer>`
 
 ## Setting Up Vim
 
