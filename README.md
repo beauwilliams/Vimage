@@ -47,3 +47,9 @@ File Browser, command pallette, startup window, better shell
 - In normal mode hit \\ for a command pallete type thing built on fuzzy finder
 - Launch neovim with `nvim` it will load a launch screen with recent files etc
 - type `zsh` to launch a better shell with history and tab completions
+
+# Preview Images
+
+![Preview](https://i.ibb.co/7xmh5JV/Screen-Shot-2020-06-24-at-11-00-39-pm.png)
+![Preview](https://i.ibb.co/9Nxh3hW/Screen-Shot-2020-06-24-at-11-00-48-pm.png)
+
