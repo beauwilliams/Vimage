@@ -41,11 +41,9 @@ once the language server is downloaded were are now ready to roll.
 
 ### Goodies
 
-File Browser
-- In normal mode hit \n
-Command Pallet like launcher
-- In normal mode hit \\
-Starup window with recent files etc
+File Browser, command pallette, startup window, better shell
+
+- In normal mode hit \n for a file browser
+- In normal mode hit \\ for a command pallete type thing built on fuzzy finder
 - Launch neovim with `nvim` it will load a launch screen with recent files etc
-A better shell with history
-- type `zsh` to launch
+- type `zsh` to launch a better shell with history and tab completions
