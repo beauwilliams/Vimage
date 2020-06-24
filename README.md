@@ -44,7 +44,7 @@ once the language server is downloaded were are now ready to roll.
 File Browser, command pallette, startup window, better shell
 
 - In normal mode hit \n for a file browser
-- In normal mode hit \\ for a command pallete type thing built on fuzzy finder
+- In normal mode hit \\\ for a command pallete type thing built on fuzzy finder
 - Launch neovim with `nvim` it will load a launch screen with recent files etc
 - type `zsh` to launch a better shell with history and tab completions
 
