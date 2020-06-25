@@ -1,4 +1,4 @@
-# NeovimJava Docker Container
+# NeovimJava Docker Image
 
 ## What this is
 
@@ -10,7 +10,10 @@ This image also serves as a template for setting up other neovim based developme
 
 Simply put, we can make python 20% faster with optimisations, but the build time is extended by almost double with this turned on. So I made 2 versions, one with a faster python (optimised version), one with a faster build time (unomptimised version)
 
-`cd` to directory containting Dockerfile from this repo
+## First Things First
+
+- clone this repo to where you want it, or wget/curl just the dockerfile only, as it will be all you need to build the docker image
+- `cd` to directory contaning Dockerfile from this repo
 
 ## Build/Run the Container
 
@@ -26,7 +29,7 @@ Simply put, we can make python 20% faster with optimisations, but the build time
 ## Setting Up Vim
 
 - open vim `nvim`
-- note: you will see an error such as "gruvbox not installed", we will install the plugins next step
+- note: you will see an error such as "gruvbox not installed", we will install the plugins next step (note I might clone these repos in build on later update to make setup more smooth)
 - in neovim hit the : or ; key, and type in `PlugInstall`
 - it will now clone all of the packages needed for the plugins located in my vimrc ~/.config/nvim/init.vim
 - relaunch vim, plugins should now load
