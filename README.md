@@ -1,4 +1,4 @@
-# NeoDev Docker Image --> Automated Development Containers
+# Vimage --> Automated Fully Featured Neovim Container Image
 
 ## What this is
 
