@@ -33,7 +33,7 @@ Simply put, we can make python 20% faster with optimisations, but the build time
 - in neovim hit the : key or hit space twice to enter command mode, and type in `PlugInstall`. Hit Enter.
 - it will now clone all of the packages needed for the plugins located in my vimrc ~/.config/nvim/init.vim
 - relaunch vim, plugins should now load. Coc {our Language Server for completion etc} will now pop open a window an install all of the language extensions i.e java, python completions etc
-- finally, run :TSInstall <language> to install language parsers for treesitter. By default vim does syntax using regex but you can have a much better experience with TS
+- finally, run :TSInstall java (or any other supported language) to install language parsers for treesitter. By default vim does syntax using regex but you can have a much better experience with TS
 - once you are done installing your desired treesitter parsers, your development environment is now completely set up with everything ready to go!
 - check out beauwilliams/dotfiles repo to see my nvim configuration for more info
 
