@@ -1,4 +1,4 @@
-# Vimage --> Automated Fully Featured Neovim Container Image
+# Vimage --> Automated Fully Featured Neovim Containers
 
 ## What this is
 
