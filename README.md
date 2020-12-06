@@ -49,10 +49,10 @@ Simply put, we can make python 20% faster with optimisations, but the build time
 File Browser, command pallette, startup window, better shell, fully featured neovim editor, treesitter based syntax highlighting
 
 - SPACE bar is the leader key
-- In normal mode hit <leader>n for a file browser
-- In normal mode hit <leader>p for a file search built on fuzzy finder powered by the very fast ripgrep, <leader>f for word search, b for buffers, C for commands, P for history
-- <leader>t for terminal in neovim,
-- <leader>h j k or l to create new window in that direction respectively, <leader>w to cycle windows. Windows autoresize depending on one in focus
+- In normal mode hit `<leader>n` for a file browser
+- In normal mode hit `<leader>p` for a file search built on fuzzy finder powered by the very fast ripgrep, `<leader>f` for word search, b for buffers, C for commands, P for history
+- `<leader>t` for terminal in neovim,
+- `<leader>h j k or l` to create new window in that direction respectively, `<leader>w` to cycle windows. Windows autoresize depending on one in focus
 - VSCode like completion and language features, snippets. Tab and enter to move through suggestions
 - Git features, gutter, and more UX enhancements...
 - Launch neovim with `nvim` it will load a launch screen with recent files etc
