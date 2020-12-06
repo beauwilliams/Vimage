@@ -55,6 +55,7 @@ File Browser, command pallette, startup window, better shell, fully featured neo
 
 # Preview Images
 
+![gif1](https://i.ibb.co/j8SRZjD/dotfiles.gif)
 ![Preview](https://i.ibb.co/7xmh5JV/Screen-Shot-2020-06-24-at-11-00-39-pm.png)
 ![Preview](https://i.ibb.co/9Nxh3hW/Screen-Shot-2020-06-24-at-11-00-48-pm.png)
 
