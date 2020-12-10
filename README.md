@@ -6,11 +6,11 @@ A premade 'environment' for developing java (and now many more languages!) using
 
 This image also serves as a template for setting up other neovim based development images, for example, seeing as we have a configured neovim, with CoC completion plugin, we can also install rust for example quite easily and then the cargo pkg mgr etc.
 
-## Minutes to set up a fully featured neovim development environment
-Minus the Docker build time, it takes roughly 3 minutes to get neovim fully working. This process is *almost* full automated. There are 2 steps,
-*1* at first launch of `nvim` run :PlugInstall, wait for plugins to download and install
-*2* Relaunch `nvim` 
-The rest of the installation is *automated*. Simply wait for CoC LSP to install the language extensions and then you are **ready to code!!**
+## Only 3 Minutes to set up a fully featured neovim development environment
+Minus the Docker build time, it takes roughly 3 minutes to get neovim fully working. This process is **fully automated** besides relaunching `nvim` once or twice.
+*1* at first launch of `nvim` :PlugInstall will run automatically, let the plugins download and install *this takes roughly 1 minute*
+*2* Once plugins installed, relaunch `nvim` -- CoC LSP will now automatically install all the language plugins *this takes roughly 1 minute*
+*3* The first time you edit a java file, java language server will be downloaded automatically, *this takes roughly 30 seconds*
 
 ## Why un/optimised versions?
 
@@ -35,11 +35,10 @@ Simply put, we can make python 20% faster with optimisations, but the build time
 ## Setting Up Neovim [Vim]
 
 - open vim `nvim`
-- note: you will see an error such as "gruvbox not installed", we will install the plugins next step (note I might clone these repos in build on later update to make setup more smooth)
-- in neovim hit the : key or hit space twice to enter command mode, and type in `PlugInstall`. Hit Enter.
+- note: you may see an error such as "gruvbox not installed", this will trigger :PlugInstall to install plugins.
 - it will now clone all of the packages needed for the plugins located in my vimrc ~/.config/nvim/init.vim
-- relaunch vim, plugins should now load. Coc {our Language Server for completion etc} will now pop open a window an install all of the language extensions i.e java, python completions etc
-- finally, run `TSInstall java` (or any other supported language) in command mode to install language parsers for treesitter. By default vim does syntax using regex but you can have a much better experience with TS
+- relaunch vim, plugins should now load. Coc {our Language Server for completion etc} will now pop open a window an install all of the language extensions automatically i.e java, python completions etc
+- finally, run `TSInstall java` (or any other supported language) in command mode to install language parsers for treesitter. By default vim does syntax using regex but you can have a much better experience with TS **note Treesitter currently requires bleeding edge nightly 0.5 nvim release which is not currently in debian/nightly as of Dec 2020**
 - once you are done installing your desired treesitter parsers, your development environment is now completely set up with everything ready to go!
 - check out beauwilliams/dotfiles repo to see my nvim configuration for more info
 
