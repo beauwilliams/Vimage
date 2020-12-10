@@ -6,6 +6,9 @@ A premade 'environment' for developing java (and now many more languages!) using
 
 This image also serves as a template for setting up other neovim based development images, for example, seeing as we have a configured neovim, with CoC completion plugin, we can also install rust for example quite easily and then the cargo pkg mgr etc.
 
+## Minutes to set up a fully featured neovim development environment
+Minus the Docker build time, it takes roughly 3 minutes to get neovim fully working. This process is *almost* full automated. There are 2 steps, *1* at first launch of `nvim` run :PlugInstall, *2* Relaunch `nvim` it the rest of the installation is *automated*. Simply wait for CoC LSP to install the language extensions and then you are **ready to code!!**
+
 ## Why un/optimised versions?
 
 Simply put, we can make python 20% faster with optimisations, but the build time is extended by almost double with this turned on. So I made 2 versions, one with a faster python (optimised version), one with a faster build time (unomptimised version)
