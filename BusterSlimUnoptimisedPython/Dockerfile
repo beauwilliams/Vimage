@@ -164,5 +164,8 @@ RUN sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/p
 RUN cd ~ && touch .zsh_history;
 RUN cd ~ && mkdir .config && mkdir .config/nvim && cd .config/nvim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim/init.vim;
 
+#Installing Golang
+RUN mkdir ~/Temp && cd ~/Temp && curl -O https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz && tar -xvf go1.15.2.linux-amd64.tar.gz && mv go /usr/local && export GOROOT=/usr/local/go && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
 
 CMD ["python3"]
