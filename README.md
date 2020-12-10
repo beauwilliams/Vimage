@@ -8,9 +8,9 @@ This image also serves as a template for setting up other neovim based developme
 
 ## Only 3 Minutes to set up a fully featured neovim development environment
 Minus the Docker build time, it takes roughly 3 minutes to get neovim fully working. This process is **fully automated** besides relaunching `nvim` once or twice.
-*1* at first launch of `nvim` :PlugInstall will run automatically, let the plugins download and install *this takes roughly 1 minute*
-*2* Once plugins installed, relaunch `nvim` -- CoC LSP will now automatically install all the language plugins *this takes roughly 1 minute*
-*3* The first time you edit a java file, java language server will be downloaded automatically, *this takes roughly 30 seconds*
+- *1* at first launch of `nvim` :PlugInstall will run automatically, let the plugins download and install *this takes roughly 1 minute*- 
+- *2* Once plugins installed, relaunch `nvim` -- CoC LSP will now automatically install all the language plugins *this takes roughly 1 minute*
+- *3* The first time you edit a java file, java language server will be downloaded automatically, *this takes roughly 30 seconds*
 
 ## Why un/optimised versions?
 
