@@ -58,6 +58,9 @@ File Browser, command pallette, startup window, better shell, fully featured neo
 - Launch neovim with `nvim` it will load a launch screen with recent files etc
 - type `zsh` to launch a better shell with history and tab completions
 
+# See full neovim mappings and configuration here
+![init.vim](https://github.com/beauwilliams/Dotfiles/blob/master/Vim/nvim/init.vim)
+
 # Please note that while my neovim configuration supports many languages for editing, the debian install is currently only setup with JDK. For other languages you must install yourself.
 
 # Preview Images
