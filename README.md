@@ -1,8 +1,8 @@
-# Vimage --> Automated Fully Featured Neovim Containers
+# Vimage --> Automated Fully Featured Neovim Image
 
 ## What this is
 
-A premade 'environment' for developing java, golang (and many more languages!) using neovim based on debian slim image, with everything installed and ready to go including language server, neovim, some configs, plugins and more.. A nice stable starting point for writing code using vim.
+A premade environment/container for developing java, golang (and many more languages!) using neovim based on debian slim image, with everything installed and ready to go including language server, neovim, some configs, plugins and more.. A nice stable starting point for writing code using vim.
 
 This image also serves as *a template for setting up other neovim based development images*, for example, seeing as we have a configured neovim, with CoC completion plugin, we can also install rust for example quite easily and then the cargo pkg mgr etc.
 
