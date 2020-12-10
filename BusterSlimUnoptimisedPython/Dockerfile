@@ -162,10 +162,16 @@ RUN apt-get update && apt-get install -y python3-neovim;
 RUN sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim';
 RUN cd ~ && touch .zsh_history;
-RUN cd ~ && mkdir .config && mkdir .config/nvim && cd .config/nvim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim/init.vim;
+RUN cd ~ && mkdir .config && mkdir .config/nvim && cd .config/nvim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim/init.vim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim/coc-settings.json;
 
 #Installing Golang
-RUN mkdir ~/Temp && cd ~/Temp && curl -LO https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz && tar -xvf go1.15.2.linux-amd64.tar.gz && mv go /usr/local && export GOROOT=/usr/local/go && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+RUN curl -LO https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
+RUN tar -xvf go1.15.2.linux-amd64.tar.gz
+RUN mv go /usr/local
+ENV GOPATH /usr/local/go
+ENV PATH $GOPATH/bin:$PATH
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+WORKDIR $GOPATH
 
 
 CMD ["python3"]
