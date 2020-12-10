@@ -2,7 +2,7 @@
 
 ## What this is
 
-A premade 'environment' for developing java (and now many more languages!) using neovim based on debian slim image, with everything installed and ready to go including language server, neovim, some configs, plugins and more.. A nice stable starting point for writing code using vim.
+A premade 'environment' for developing java, golang (and many more languages!) using neovim based on debian slim image, with everything installed and ready to go including language server, neovim, some configs, plugins and more.. A nice stable starting point for writing code using vim.
 
 This image also serves as *a template for setting up other neovim based development images*, for example, seeing as we have a configured neovim, with CoC completion plugin, we can also install rust for example quite easily and then the cargo pkg mgr etc.
 
@@ -66,7 +66,7 @@ File Browser, command pallette, startup window, better shell, fully featured neo
 # See full neovim mappings and configuration here
 ![init.vim](https://github.com/beauwilliams/Dotfiles/blob/master/Vim/nvim/init.vim)
 
-# Please note that while my neovim configuration supports many languages for editing, the debian install is currently only setup with JDK. For other languages you must install yourself.
+# Please note that while my neovim configuration supports many languages for editing, the debian install is currently only setup with JDK and Golang. For other languages you must install yourself.
 
 # Preview Images
 
