@@ -199,7 +199,7 @@ RUN apt-get update && apt-get install -y python3-neovim;
 RUN sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim';
 RUN cd ~ && touch .zsh_history;
-RUN cd ~ && mkdir .config && mkdir .config/nvim && cd .config/nvim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim/init.vim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim/coc-settings.json;
+RUN cd ~ && mkdir .config && mkdir .config/nvim && cd .config/nvim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim-pre-lua/init.vim && curl -LJO https://raw.githubusercontent.com/beauwilliams/Dotfiles/master/Vim/nvim-pre-lua/coc-settings.json;
 
 #Installing Golang
 RUN curl -LO https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
